@@ -1,5 +1,4 @@
 const words = [
-
     "python",
     "javascript",
     "mongodb",
@@ -47,5 +46,6 @@ console.log(wordSplit); // a del
             gameStatus(wordSplit, userLetter, currLife) 
             inputText.value = ''
         }
+
         stateOfLife(currLife)
     })
