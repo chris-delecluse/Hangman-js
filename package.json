@@ -1,0 +1,19 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./sass/main.scss:./assets/stylesheets/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-delecluse/Hangman-js.git"
+  },
+  "author": "christopher delecluse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris-delecluse/Hangman-js/issues"
+  },
+  "homepage": "https://github.com/chris-delecluse/Hangman-js#readme"
+}

@@ -1,0 +1,123 @@
+body {
+
+    background-color: #1E3D59;
+}
+
+section {
+
+    margin: 0 auto;
+    max-width: 800px;
+
+    h1 {
+
+        margin: 30px auto 20px auto;
+        font-size: 60px;
+        text-align: center;
+        background: linear-gradient(to right, #FF6E40, #FFC13B);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .content {
+
+        margin: 0 auto;
+
+    }
+
+    .drowing {
+
+        margin: 0 auto 30px auto;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .box {
+
+        margin: auto auto 10px auto;
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+
+        &__form {
+
+            margin-bottom: 10px;
+
+            &__input {
+
+                width: 300px;
+                height: 30px;
+                font-size: 1.2em;
+                text-align: center;
+                color: #FFF;
+                background-color: #1d3d58;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 2px solid #FF6E40;
+
+                &:focus {
+
+                    color: #FFC13B;
+                    outline: none;
+
+                }
+
+            }
+        }
+        
+        &__text {
+
+            text-align: center;
+
+            span {
+
+                margin-right: 8px;
+                font-size: 1.5em;
+                color: #FFF;
+                border-bottom: 3px solid #FF6E40;
+
+            }
+        }
+    }
+
+    .keyboard {
+
+        margin: 0 auto 60px auto;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        
+        &__letter {
+            
+            width: 100px;
+            height: 32px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #FFF;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #1E3D59 0%, #285c86 100%);
+
+        }
+
+        .isFound {
+
+            color: green;
+            background: none;
+            border: 3px solid green;
+
+        }
+
+        .isNotFound {
+
+            color: red;
+            background: none;
+            border: 3px solid red;
+
+        }
+    }
+}

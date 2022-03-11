@@ -1,0 +1,56 @@
+
+const word = 'VOITEURE'
+const letterAlreadyUse = []
+
+const userInput = document.getElementById("inputLetter")
+const userInputButton = document.getElementById("subLetter")
+
+let life = 10
+
+userInputButton.addEventListener("click", () => {
+    const myWordSplit = word.split('')
+    
+    userInput.value = userInput.value.toUpperCase()
+
+    if (word.match(userInput.value)) {
+        myWordSplit.forEach((el, k) => {
+            if (userInput.value === el && letterAlreadyUse[k] === undefined) {
+                letterAlreadyUse[k] = el
+            }
+        })
+    } else {
+        console.log(`${userInput.value} is not inside the word`) // attacher a un element html
+        life--
+        console.log(`Remaining life : ${life}`)
+    }
+
+    let controlArr = areSame(myWordSplit, letterAlreadyUse)
+
+    isWin(controlArr, life)
+
+    console.log(letterAlreadyUse)   
+})
+
+const areSame = (arrOfword, letterFound) => {
+    let count = arrOfword.length
+
+    for (let i = 0; i < arrOfword.length; i++) {
+        if (arrOfword[i] != letterFound[i]) {
+            count--
+        }
+    }
+
+    if (count === arrOfword.length) {
+        return true
+    } else {
+        return false
+    }
+}
+
+const isWin = (bool, currLife) => {
+    if (bool === true && currLife < 0) {
+        console.log(`It's win !!!!`); // attacher a un element html
+    } else if (currLife === 0) {
+        console.log(`It's loose...`);
+    }
+}
