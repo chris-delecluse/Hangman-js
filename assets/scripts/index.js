@@ -29,34 +29,23 @@ createSpanForLetter(wordSplit, spans)
 console.log(wordSplit); // a del
 
     inputText.addEventListener("keydown", (e) => {
-
         let inputValue = inputText.value.toUpperCase()
         
         if (e.key === 'Enter') {
-            
             if (wordToGuess.toUpperCase().match(inputValue)) {
-
                 wordSplit.forEach((el, key) => {
-                        
-                    if (inputValue === el &&
-                        userLetter[key] === undefined) {
-                        
+                    if (inputValue === el && userLetter[key] === undefined) {
                         userLetter[key] = el
                         document.getElementsByTagName("span")[key].innerHTML = el
-                        
                     } 
                 });
             } else {
-
-                    currLife--
-                    console.log(`Remaining life : ${currLife}`)
-                }
-            
+                currLife--
+                console.log(`Remaining life : ${currLife}`)
+            }
             e.preventDefault();
             gameStatus(wordSplit, userLetter, currLife) 
             inputText.value = ''
         }
-
         stateOfLife(currLife)
     })
-

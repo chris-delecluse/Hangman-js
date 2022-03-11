@@ -5,8 +5,12 @@ const draw = (() => {
     ctx.fillStyle = "#FF6E40"
     ctx.fillRect(0, 40, 110, 5)
     ctx.fillRect(0, 40, 5, 220)
-    ctx.fillRect(110, 40, 5, 40)
 })()
+
+const drawRope = () => {
+    ctx.fillStyle = "#FF6E40"
+    ctx.fillRect(110, 40, 5, 40)
+}
 
 const drawHead = () => {
     ctx.fillStyle = "#787373"
