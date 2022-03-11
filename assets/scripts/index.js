@@ -22,8 +22,6 @@ const userLetter = []
 const inputText = document.getElementById("letter")
 const spans = document.getElementsByClassName("box__text")[0]
 
-// resetPage(5000)
-
 let currLife = 7
 
 createSpanForLetter(wordSplit, spans)
@@ -55,7 +53,6 @@ console.log(wordSplit); // a del
                 }
             
             e.preventDefault();
-                    // here
             gameStatus(wordSplit, userLetter, currLife) 
             inputText.value = ''
         }
