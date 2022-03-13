@@ -29,7 +29,7 @@ const drawLeftArm = () => {
     ctx.beginPath()
     ctx.moveTo(111, 142)
     ctx.lineTo(80, 170)
-    ctx.lineWidth = "5"
+    ctx.lineWidth = 5
     ctx.stroke()
 
     ctx.fillStyle = "#FFB6C1"
@@ -41,7 +41,7 @@ const drawRightArm = () => {
     ctx.beginPath()
     ctx.moveTo(119, 142)
     ctx.lineTo(153, 170)
-    ctx.lineWidth = "5"
+    ctx.lineWidth = 5
     ctx.stroke()
 
     ctx.fillStyle = "#FFB6C1"
@@ -53,14 +53,14 @@ const drawLeftLeg = () => {
     ctx.beginPath()
     ctx.moveTo(113, 185)
     ctx.lineTo(100, 225)
-    ctx.lineWidth = "5"
+    ctx.lineWidth = 5
     ctx.stroke()
 
     ctx.strokeStyle = "#787373"
     ctx.beginPath()
     ctx.moveTo(118, 185)
     ctx.lineTo(100, 225)
-    ctx.lineWidth = "5"
+    ctx.lineWidth = 5
     ctx.stroke()
 
     ctx.fillStyle = "#FFB6C1"
@@ -72,14 +72,14 @@ const drawRightLeg = () => {
     ctx.beginPath()
     ctx.moveTo(118, 185)
     ctx.lineTo(130, 225)
-    ctx.lineWidth = "5"
+    ctx.lineWidth = 5
     ctx.stroke()
 
     ctx.strokeStyle = "#787373"
     ctx.beginPath()
     ctx.moveTo(113, 185)
     ctx.lineTo(130, 225)
-    ctx.lineWidth = "5"
+    ctx.lineWidth = 5
     ctx.stroke()
 
     ctx.fillStyle = "#FFB6C1"

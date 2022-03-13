@@ -42,16 +42,12 @@ const areSame = (arrOfword, letterFound) => {
     let count = arrOfword.length
 
     for (let i = 0; i < arrOfword.length; i++) {
-        if (arrOfword[i] != letterFound[i]) {
+        if (arrOfword[i] !== letterFound[i]) {
             count--
         }
     }
 
-    if (count === arrOfword.length) {
-        return true
-    } else {
-        return false
-    }
+    return count === arrOfword.length;
 }
 
 const resetPage = (timeoutPeriod) => {
@@ -66,7 +62,7 @@ const gameStatus = (arr1, arr2, currLife) => {
             document.getElementsByTagName("span")[i].style.color = "#91F086"
         }
 
-        document.getElementById("letter").setAttribute('disabled', true)
+        document.getElementById("letter").setAttribute('disabled', 'true')
         resetPage(3000)
 
     } else if (currLife <= 0) {
@@ -76,7 +72,7 @@ const gameStatus = (arr1, arr2, currLife) => {
             document.getElementsByTagName("span")[k].style.color = "#ED2939"
         })
 
-        document.getElementById("letter").setAttribute('disabled', true)
+        document.getElementById("letter").setAttribute('disabled', 'true')
         resetPage(3000)
 
     } else {
